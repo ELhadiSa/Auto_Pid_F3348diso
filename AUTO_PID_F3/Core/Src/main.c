@@ -48,6 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+  uint16_t I_out[10]={};
 
 /* USER CODE END PV */
 
@@ -95,7 +96,14 @@ int main(void)
   MX_HRTIM1_Init();
   MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
-HAL_TIM_Base_Start_IT(&htim7);
+  //ADC
+  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out,10);
+
+//start TIM6 for creating time base to  compute PI, START HRTIM_OUTPUT_TC1 to generate PWM with  10%duty
+HAL_HRTIM_SimplePWMStart(&hhrtim1,HRTIM_TIMERINDEX_TIMER_C,HRTIM_OUTPUT_TC1);
+//HAL_TIM_Base_Start_IT(&htim7);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,7 +111,6 @@ HAL_TIM_Base_Start_IT(&htim7);
   while (1)
   {
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -158,6 +165,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
 	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_6,GPIO_PIN_SET);
 }
+
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
+
+	__NOP();
+}
+
 /* USER CODE END 4 */
 
 /**
