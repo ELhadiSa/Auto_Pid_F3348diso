@@ -19,8 +19,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "tim.h"
-
+#include "stm32_hal_legacy.h"
 /* USER CODE BEGIN 0 */
+extern HRTIM_HandleTypeDef hhrtim1;
+extern float Compute_Pi_Output();
 
 /* USER CODE END 0 */
 
@@ -35,7 +37,7 @@ void MX_TIM7_Init(void)
   htim7.Init.Prescaler = 0;
   htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim7.Init.Period = 191;
-  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
   if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
   {
     Error_Handler();
@@ -89,6 +91,13 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 } 
 
 /* USER CODE BEGIN 1 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+	__HAL_HRTIM_SetCompare(&hhrtim1, HRTIM_TIMERINDEX_TIMER_C, HRTIM_COMPAREUNIT_1, (180-(uint32_t)(Compute_Pi_Output())));
+
+
+}
+
 
 /* USER CODE END 1 */
 
