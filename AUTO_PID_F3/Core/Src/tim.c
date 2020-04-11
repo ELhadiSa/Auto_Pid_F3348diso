@@ -19,11 +19,14 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "tim.h"
-#include "stm32_hal_legacy.h"
 /* USER CODE BEGIN 0 */
 extern HRTIM_HandleTypeDef hhrtim1;
-extern float Compute_Pi_Output();
+extern ADC_HandleTypeDef hadc1;
+int32_t PWM;
 
+extern float Compute_Pi_Output();
+extern uint16_t I_out_TAB[10];
+extern float I_out;
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim7;
@@ -93,8 +96,27 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 /* USER CODE BEGIN 1 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
-	__HAL_HRTIM_SetCompare(&hhrtim1, HRTIM_TIMERINDEX_TIMER_C, HRTIM_COMPAREUNIT_1, (180-(uint32_t)(Compute_Pi_Output())));
 
+	//compute ADC average
+		float I_out_new=0;
+	for ( int i=0; i < (sizeof(I_out_TAB)/sizeof(I_out_TAB[0]));++i) //https://stackoverflow.com/questions/5485324/why-it-gives-wrong-array-size
+		{
+		I_out_new=I_out_new+I_out_TAB[i];
+
+		}
+	I_out = I_out_new/(sizeof(I_out_TAB)/sizeof(I_out_TAB[0]));
+
+
+	//update_PWM
+	PWM= (180-(uint32_t)(Compute_Pi_Output()));
+
+
+	__HAL_HRTIM_SetCompare(&hhrtim1, HRTIM_TIMERINDEX_TIMER_C, HRTIM_COMPAREUNIT_1,PWM);
+
+
+
+	//restart_DMA
+	  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out_TAB,10);
 
 }
 

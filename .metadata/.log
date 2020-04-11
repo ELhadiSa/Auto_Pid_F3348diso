@@ -2598,3 +2598,177 @@ Warning:\nCannot insert hardware breakpoint 3:Remote communication error.  Targe
 java.lang.Exception: Warning:\nCannot insert hardware breakpoint 3:Remote communication error.  Target disconnected.: No error..\n
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1022)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:851)
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:02:36.274
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:02:36.276
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:02:36.277
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:02:36.372
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:02:36.373
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:02:36.374
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:02:36.384
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:02:36.384
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:02:36.385
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:05:49.232
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:05:49.233
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:05:49.233
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:07:17.715
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:07:17.716
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:07:17.717
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:08:29.503
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:08:29.504
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:08:29.505
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:09:03.631
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:09:03.632
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:09:03.633
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:10:27.869
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:10:27.870
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:10:27.870
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:17:13.452
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:17:13.453
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:17:13.454
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY TrueSTUDIO 4 0 2020-04-11 17:18:18.169
+!MESSAGE ST-LINK GDB server failed to start (exit code = 1)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2020-04-11 17:18:18.218
+!MESSAGE Error in initializing ST-Link device.
+Reason: (1) Failed to connect to device. Please check power and cabling to target.
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:20:10.367
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:20:10.368
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:20:10.369
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:21:15.477
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:21:15.478
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:21:15.478
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:25:59.963
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:25:59.964
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:25:59.965
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:30:55.774
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:30:55.775
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:30:55.775
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:37:28.531
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:37:28.532
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:37:28.533
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-04-11 17:38:33.620
+!MESSAGE An internal error occurred during: "Interrupt monitor job.".
+!STACK 0
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5cc132 rejected from org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor@f0e4e1[Shutting down, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 2587]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:326)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:533)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.schedule(DefaultDsfExecutor.java:438)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.submit(ScheduledThreadPoolExecutor.java:632)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.submit(DefaultDsfExecutor.java:470)
+	at org.eclipse.cdt.dsf.gdb.service.GDBBackend$MonitorInterruptJob.run(GDBBackend.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:38:38.656
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:38:38.657
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:38:38.657
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:39:19.212
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:39:19.213
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:39:19.213
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:39:54.741
+!MESSAGE No CPU core info found for device: default
+
+!ENTRY com.atollic.truestudio.tsp 4 0 2020-04-11 17:39:54.741
+!MESSAGE Failed to read XML for default SVD-file. Vendor=STMicroelectronics,Mcu=default
+
+!ENTRY com.atollic.truestudio.tsp 1 0 2020-04-11 17:39:54.742
+!MESSAGE No valid SVD data file found! Vendor=STMicroelectronics Mcu=default

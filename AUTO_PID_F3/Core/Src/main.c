@@ -97,12 +97,15 @@ int main(void)
   MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
   //start ADC DMA
-//  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out_TAB,10);
+  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out_TAB,10);
 HAL_Delay(1);
 //start TIM6 for creating time base to  compute PI, START HRTIM_OUTPUT_TC1 to generate PWM with  10%duty
-//HAL_HRTIM_SimplePWMStart(&hhrtim1,HRTIM_TIMERINDEX_TIMER_C,HRTIM_OUTPUT_TC1);
-HAL_TIM_Base_Start_IT(&htim7);
+HAL_HRTIM_SimplePWMStart(&hhrtim1,HRTIM_TIMERINDEX_TIMER_C,HRTIM_OUTPUT_TC1);
+//HAL_TIM_Base_Start_IT(&htim7);
 
+
+//usedfor test
+//__HAL_HRTIM_SetCompare(&hhrtim1, 2, HRTIM_COMPAREUNIT_1,180);
 
   /* USER CODE END 2 */
 

@@ -47,7 +47,7 @@ void MX_HRTIM1_Init(void)
   {
     Error_Handler();
   }
-  pSimplePWMChannelCfg.Pulse = 20;
+  pSimplePWMChannelCfg.Pulse = 50;
   pSimplePWMChannelCfg.Polarity = HRTIM_OUTPUTPOLARITY_HIGH;
   pSimplePWMChannelCfg.IdleLevel = HRTIM_OUTPUTIDLELEVEL_INACTIVE;
   if (HAL_HRTIM_SimplePWMChannelConfig(&hhrtim1, HRTIM_TIMERINDEX_TIMER_C, HRTIM_OUTPUT_TC1, &pSimplePWMChannelCfg) != HAL_OK)

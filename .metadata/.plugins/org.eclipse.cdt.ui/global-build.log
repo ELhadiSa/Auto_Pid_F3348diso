@@ -1,28 +1,20 @@
-14:44:26 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
+17:30:47 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
 Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\tim.o ..\Core\Src\tim.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  16948	     48	    628	  17624	   44d8	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-Info: Nothing to build for AUTO_PID_F3
-14:49:53 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\dma.o ..\Core\Src\dma.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\adc.o ..\Core\Src\adc.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\stm32f3xx_it.o ..\Core\Src\stm32f3xx_it.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\stm32f3xx_hal_msp.o ..\Core\Src\stm32f3xx_hal_msp.c 
 arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\PI.o ..\Core\Src\PI.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\tim.o ..\Core\Src\tim.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\hrtim.o ..\Core\Src\hrtim.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\gpio.o ..\Core\Src\gpio.c 
 arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
 C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
 Generate build reports...
 Print size information
    text	   data	    bss	    dec	    hex	filename
-  16948	     56	    620	  17624	   44d8	AUTO_PID_F3.elf
+  17612	     56	    624	  18292	   4774	AUTO_PID_F3.elf
 Print size information done
 Generate listing file
 Output sent to: AUTO_PID_F3.list
@@ -30,22 +22,7 @@ Generate listing file done
 Generate build reports done
 arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
 Info: Nothing to build for AUTO_PID_F3
-14:53:12 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\tim.o ..\Core\Src\tim.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  16948	     56	    620	  17624	   44d8	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-14:53:57 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
+17:37:23 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
 Info: Internal Builder is used for build
 arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
 arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
@@ -53,76 +30,14 @@ C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar 
 Generate build reports...
 Print size information
    text	   data	    bss	    dec	    hex	filename
-  15548	     32	    600	  16180	   3f34	AUTO_PID_F3.elf
+  17612	     56	    624	  18292	   4774	AUTO_PID_F3.elf
 Print size information done
 Generate listing file
 Output sent to: AUTO_PID_F3.list
 Generate listing file done
 Generate build reports done
 arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-14:55:21 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\tim.o ..\Core\Src\tim.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  15540	     32	    600	  16172	   3f2c	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-14:57:06 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\adc.o ..\Core\Src\adc.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  16940	     56	    620	  17616	   44d0	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-Info: Nothing to build for AUTO_PID_F3
-15:05:11 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\adc.o ..\Core\Src\adc.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  16940	     56	    620	  17616	   44d0	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-15:27:59 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\adc.o ..\Core\Src\adc.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  16944	     56	    620	  17620	   44d4	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-15:28:51 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
+17:38:33 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
 Info: Internal Builder is used for build
 arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
 arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
@@ -130,67 +45,38 @@ C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar 
 Generate build reports...
 Print size information
    text	   data	    bss	    dec	    hex	filename
-  15680	     56	    600	  16336	   3fd0	AUTO_PID_F3.elf
+  17612	     56	    624	  18292	   4774	AUTO_PID_F3.elf
 Print size information done
 Generate listing file
 Output sent to: AUTO_PID_F3.list
 Generate listing file done
 Generate build reports done
 arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-15:29:41 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
+17:39:14 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
 Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\hrtim.o ..\Core\Src\hrtim.c 
 arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
 arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
 C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
 Generate build reports...
 Print size information
    text	   data	    bss	    dec	    hex	filename
-  17020	     56	    620	  17696	   4520	AUTO_PID_F3.elf
+  17600	     56	    624	  18280	   4768	AUTO_PID_F3.elf
 Print size information done
 Generate listing file
 Output sent to: AUTO_PID_F3.list
 Generate listing file done
 Generate build reports done
 arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-15:31:56 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
+17:39:49 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
 Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\adc.o ..\Core\Src\adc.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\hrtim.o ..\Core\Src\hrtim.c 
 arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
 C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
 Generate build reports...
 Print size information
    text	   data	    bss	    dec	    hex	filename
-  17016	     56	    620	  17692	   451c	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-15:50:58 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  16784	     32	    620	  17436	   441c	AUTO_PID_F3.elf
-Print size information done
-Generate listing file
-Output sent to: AUTO_PID_F3.list
-Generate listing file done
-Generate build reports done
-arm-atollic-eabi-objcopy.exe -O ihex AUTO_PID_F3.elf AUTO_PID_F3.hex 
-15:52:02 **** Incremental Build of configuration Debug for project AUTO_PID_F3 ****
-Info: Internal Builder is used for build
-arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F334x8 -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Core\Src\main.o ..\Core\Src\main.c 
-arm-atollic-eabi-gcc -o AUTO_PID_F3.elf Core\Src\PI.o Core\Src\adc.o Core\Src\dma.o Core\Src\gpio.o Core\Src\hrtim.o Core\Src\main.o Core\Src\stm32f3xx_hal_msp.o Core\Src\stm32f3xx_it.o Core\Src\syscalls.o Core\Src\system_stm32f3xx.o Core\Src\tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_adc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_dma.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_exti.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_flash_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_gpio.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_hrtim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_pwr_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_rcc_ex.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.o startup\startup_stm32f334x8.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F334C8_FLASH.ld -specs=nosys.specs -static -Wl,-Map=AUTO_PID_F3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
-C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list AUTO_PID_F3.elf 
-Generate build reports...
-Print size information
-   text	   data	    bss	    dec	    hex	filename
-  15616	     32	    600	  16248	   3f78	AUTO_PID_F3.elf
+  17600	     56	    624	  18280	   4768	AUTO_PID_F3.elf
 Print size information done
 Generate listing file
 Output sent to: AUTO_PID_F3.list

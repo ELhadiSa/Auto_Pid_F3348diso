@@ -147,14 +147,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 /* USER CODE BEGIN 1 */
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
-//compute ADC average
-	float I_out_new=0;
-for ( int i=0; i < (sizeof(I_out_TAB)/sizeof(I_out_TAB[0]));++i) //https://stackoverflow.com/questions/5485324/why-it-gives-wrong-array-size
-	{
-	I_out_new=I_out_new+I_out_TAB[i];
-
-	}
-I_out = I_out_new/(sizeof(I_out_TAB)/sizeof(I_out_TAB[0]));
+	  HAL_ADC_Stop_DMA(&hadc1);
 
 }
 
