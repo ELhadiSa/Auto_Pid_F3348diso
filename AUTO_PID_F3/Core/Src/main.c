@@ -98,11 +98,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   //start ADC DMA
   HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out_TAB,IOUT_SIZE_TD);
-HAL_Delay(1);
-//start TIM6 for creating time base to  compute PI, START HRTIM_OUTPUT_TC1 to generate PWM with  10%duty
+
+  HAL_Delay(1);
+//start TIM7 for creating time base to  compute PI, START HRTIM_OUTPUT_TC1 to generate PWM with  10%duty
 HAL_HRTIM_WaveformOutputStart(&hhrtim1, HRTIM_OUTPUT_TC1);
 HAL_HRTIM_WaveformCountStart(&hhrtim1, HRTIM_TIMERID_TIMER_C);
-
 HAL_TIM_Base_Start_IT(&htim7);
 
 

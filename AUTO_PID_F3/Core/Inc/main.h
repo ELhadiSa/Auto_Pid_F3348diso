@@ -47,7 +47,7 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define IOUT_SIZE_TD 100
+#define IOUT_SIZE_TD 10
 
 /* USER CODE END EM */
 

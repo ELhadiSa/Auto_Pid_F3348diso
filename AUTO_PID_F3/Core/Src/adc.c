@@ -147,7 +147,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 /* USER CODE BEGIN 1 */
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
-	  HAL_ADC_Stop_DMA(&hadc1);
+
+
+	HAL_ADC_Stop_DMA(&hadc1);
 
 }
 
