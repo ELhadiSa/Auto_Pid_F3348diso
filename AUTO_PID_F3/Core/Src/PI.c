@@ -14,9 +14,9 @@
 #define OUTPUTMIN 30
 
 
-float I_out_target = ADC_RATIO*0.3; // Amp
+float I_out_target = ADC_RATIO*0.201612; // Amp
 extern float I_out;
-float Kp=0.1,Ki=0.005;
+float Kp=0.4,Ki=0.000;
 int32_t integral_sum = 0;
 
 

@@ -6,3 +6,6 @@
 1586544205215	Delete resource 'auto_pid_cubeMX'
 1586544210890	Delete resource 'Auto_PID'
 1586545283789	Delete resource 'AUTO_PID_F3/startup/startup_stm32f334x8.s'
+1586624530074	Delete resource 'STM32F3348-Discovery'
+1586633378296	Delete resource 'STM32F3348-Discovery'
+1586633382472	Delete resource 'clockf3'

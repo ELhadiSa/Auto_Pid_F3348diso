@@ -19,13 +19,14 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "tim.h"
+
 /* USER CODE BEGIN 0 */
 extern HRTIM_HandleTypeDef hhrtim1;
 extern ADC_HandleTypeDef hadc1;
 int32_t PWM;
 
 extern float Compute_Pi_Output();
-extern uint16_t I_out_TAB[10];
+extern uint16_t I_out_TAB[IOUT_SIZE_TD];
 extern float I_out;
 /* USER CODE END 0 */
 
@@ -40,7 +41,7 @@ void MX_TIM7_Init(void)
   htim7.Init.Prescaler = 0;
   htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim7.Init.Period = 191;
-  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
   {
     Error_Handler();
@@ -99,24 +100,26 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 
 	//compute ADC average
 		float I_out_new=0;
+
 	for ( int i=0; i < (sizeof(I_out_TAB)/sizeof(I_out_TAB[0]));++i) //https://stackoverflow.com/questions/5485324/why-it-gives-wrong-array-size
 		{
-		I_out_new=I_out_new+I_out_TAB[i];
 
+		I_out_new=I_out_new+I_out_TAB[i];
 		}
-	I_out = I_out_new/(sizeof(I_out_TAB)/sizeof(I_out_TAB[0]));
+
+	I_out = I_out_new/((sizeof(I_out_TAB)/sizeof(I_out_TAB[0])));
 
 
 	//update_PWM
 	PWM= (180-(uint32_t)(Compute_Pi_Output()));
 
 
-	__HAL_HRTIM_SetCompare(&hhrtim1, HRTIM_TIMERINDEX_TIMER_C, HRTIM_COMPAREUNIT_1,PWM);
+	__HAL_HRTIM_SETCOMPARE(&hhrtim1,HRTIM_TIMERINDEX_TIMER_C, HRTIM_COMPAREUNIT_1,PWM);
 
 
 
 	//restart_DMA
-	  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out_TAB,10);
+	  HAL_ADC_Start_DMA(&hadc1,(uint32_t*)I_out_TAB,IOUT_SIZE_TD);
 
 }
 

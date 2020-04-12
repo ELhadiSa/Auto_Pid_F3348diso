@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="I_out_TAB" key="selection"/>
+		<item value="SETCOM" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="setcom"/>
+			<item value="update pwm"/>
+			<item value="pwm update"/>
+			<item value="update"/>
 			<item value="I_out"/>
 			<item value="HAL_ADC_CON"/>
 		</list>
